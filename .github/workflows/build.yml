@@ -24,6 +24,7 @@ jobs:
 
       - name: Compile LaTeX document
         uses: chrisridgers/latex-action@master
+        continue-on-error: true
         with:
           root_file: cv_10.tex
           latexmk_use_xelatex: true
