@@ -26,7 +26,7 @@ jobs:
         uses: chrisridgers/latex-action@master
         continue-on-error: true
         with:
-          root_file: cv_10.tex
+          root_file: src/cv_10.tex
           latexmk_use_xelatex: true
           args: "-pdf -interaction=nonstopmode -f"
           
