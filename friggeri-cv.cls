@@ -51,12 +51,12 @@
 %\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
 \RequirePackage{unicode-math}
 
-\newfontfamily\bodyfont[]{Nimbus Sans}
-\newfontfamily\thinfont[]{Nimbus Sans D OT Ultra Light}
-\newfontfamily\headingfont[]{Nimbus Sans Narrow Bold}
+\newfontfamily\bodyfont[]{NimbusSanL-Regu}
+\newfontfamily\thinfont[]{NimbusSansDOT-UltrLigh}
+\newfontfamily\headingfont[]{NimbusSanL-BoldCond}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Nimbus Sans}
+\setmainfont[Mapping=tex-text, Color=textcolor]{NimbusSanL-Regu}
 
 %\setmathfont{XITS Math}
 
