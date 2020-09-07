@@ -27,6 +27,7 @@ jobs:
         with:
           root_file: cv_10.tex
           latexmk_use_xelatex: true
+          args: "-pdf -file-line-error -halt-on-error -interaction=nonstopmode -f"
           
       - name: Create Release
         id: create_release
