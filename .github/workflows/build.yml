@@ -23,7 +23,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Compile LaTeX document
-        uses: chrisridgers/latex-action@v2
+        uses: chrisridgers/latex-action@master
         with:
           root_file: cv_10.tex
           latexmk_use_xelatex: true
