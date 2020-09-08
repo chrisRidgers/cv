@@ -26,7 +26,7 @@ jobs:
         uses: chrisridgers/latex-action@master
         continue-on-error: true
         with:
-          root_file: cv_10.tex
+          root_file: cv.tex
           latexmk_use_xelatex: true
           working_directory: 'src'
           args: "-pdf -interaction=nonstopmode -f"
@@ -48,6 +48,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-          asset_path: ./cv_10.pdf
-          asset_name: cv_10.pdf
+          asset_path: ./cv.pdf
+          asset_name: cv.pdf
           asset_content_type: application/pdf     

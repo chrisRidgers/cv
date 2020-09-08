@@ -1,7 +1,15 @@
 # About
-Latest version of my CV, typesetted in Helvetica and using colors inspired by Monokai (there is an `print` option which renders in black and white, and reverts the header to dark on light, if printing on paper is needed).
 
-Uses TikZ for the header, XeTeX and fontspec to use Helvetica Neue, biblatex to print my publications and textpos for the aside.
+Version controlled, CI built CV based on template original by Adrien Friggeri.  Font type switched from Helvetica to Nimbus based fonts because I'm not consistently on Apple devices anymore.
+
+## To Do
+
+- Find a better way to source the Ultra Light variant of the Nimbus font. 
+- Refactor any supporting Docker images into faster builds with fewer layers.
+- Figure out why font names appear to vary between Manjaro (Arch) and Alpine (docker) distributions, it's a real nuisance having to re figure stuff out multiple times.
+- Review biber, see if we can drop it completely
+- Review build output and see if we can get it to a point where we can remove the continue when failed parameter in the build action.
+- Review the GitHub actions for creating releases: find out why tags are a) required and b) blocking a release from being updated.
 
 
 # License
