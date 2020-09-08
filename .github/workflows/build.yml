@@ -26,8 +26,9 @@ jobs:
         uses: chrisridgers/latex-action@master
         continue-on-error: true
         with:
-          root_file: src/cv_10.tex
+          root_file: cv_10.tex
           latexmk_use_xelatex: true
+          working_directory: 'src'
           args: "-pdf -interaction=nonstopmode -f"
           
       - name: Create Release
@@ -40,6 +41,7 @@ jobs:
           release_name: Release ${{ github.ref }}
           draft: false
           prerelease: false
+          allowUpdates: true
       - name: Upload Release Asset
         id: upload-release-asset 
         uses: actions/upload-release-asset@v1
