@@ -30,7 +30,7 @@ jobs:
           root_file: cv.tex
           latexmk_use_xelatex: true
           working_directory: 'src'
-          args: "-pdf -interaction=nonstopmode -f"
+          args: "-pdf -interaction=nonstopmode -halt-on-error -f"
 
       - name: GH Release
         uses: softprops/action-gh-release@v0.1.13
